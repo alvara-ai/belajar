@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyek Belajar</title>
+    <title>Login - Pencatat Keuangan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Halo, ini web pertama saya!</h1>
-    <p>Diunggah ke GitHub dari VS Code.</p>
+
+    <div class="container">
+        <h1>🔐 Masuk ke Akun</h1>
+        <p style="text-align: center;">Silakan masuk untuk mencatat keuanganmu.</p>
+
+        <!-- Form Login -->
+        <form id="form-login">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Masukkan username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Masukkan password" required>
+
+            <!-- Mengalihkan ke dashboard.html saat tombol diklik -->
+            <button type="button" onclick="window.location.href='dashboard.html'">Masuk</button>
+        </form>
+    </div>
+
 </body>
-<h2>daftar hobi</h2>
-<ul>
-    <li>membaca</li>
-    <li>menulis</li>
-    <li>bermain game</li>
-</ul>
-
-<button onclick="alert('Halo!')">Klik Saya</button>
-<br><br
-
-<a href="https://www.github.com" target="_blank">Kunjungi GitHub</a>
 </html>
-<p>Ini perubahan kedua yg aku kirim ke github</p>
-
-<a href="halaman2.html" class="button">Buka Halaman Kedua</a>

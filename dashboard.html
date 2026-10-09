@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Pencatat Keuangan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>💰 Pencatat Keuangan Harian</h1>
+        
+        <div class="ringkasan">
+            <h2>Total Saldo: <span id="total-saldo">Rp 0</span></h2>
+        </div>
+
+        <form id="form-transaksi">
+            <h3>Tambah Transaksi Baru</h3>
+            
+            <label for="keterangan">Keterangan:</label>
+            <input type="text" id="keterangan" placeholder="Contoh: Beli Bensin, Gaji" required>
+
+            <label for="jumlah">Jumlah (Rp):</label>
+            <input type="number" id="jumlah" placeholder="Contoh: 50000" required>
+
+            <label for="tipe">Tipe Transaksi:</label>
+            <select id="tipe">
+                <option value="pemasukan">Pemasukan (+)</option>
+                <option value="pengeluaran">Pengeluaran (-)</option>
+            </select>
+
+            <button type="submit">Tambah Transaksi</button>
+        </form>
+
+        <h3>Riwayat Transaksi</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Keterangan</th>
+                    <th>Tipe</th>
+                    <th>Jumlah</th>
+                </tr>
+            </thead>
+            <tbody id="daftar-transaksi">
+            </tbody>
+        </table>
+
+        <br>
+        <!-- Tombol untuk kembali ke halaman login -->
+        <a href="index.html" style="color: #e74c3c; text-decoration: none; font-weight: bold;">← Keluar (Logout)</a>
+    </div>
+
+</body>
+</html>
